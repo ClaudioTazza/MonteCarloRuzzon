@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "random.h"
-#include "punto.h"
+#include <math.h>
 
 #define NVAL 2
 
 int main(){
-  int i, frecceTotali, frecceG = 0, raggio, origine[NVAL] = {0, 0}, x[NVAL], y[NVAL], puntoFreccia[NVAL];
+  int i, frecceTotali, frecceG = 0, raggio, origine[NVAL] = {0, 0}, x[NVAL], puntoFreccia[NVAL];
   double distanza, Pgreco;
 
 
@@ -18,7 +18,7 @@ int main(){
     puntoFreccia[0] = random_between(-raggio, raggio);
     puntoFreccia[1] = random_between(-raggio, raggio);
 
-    distanza = punto_distance(origine, puntoFreccia);
+    distanza = sqrt( (x[0] - x[1]) * (x[0] - x[1]) )
 
     if(distanza > raggio) frecceG++;
   }

@@ -8,11 +8,10 @@ int main(){
   int i, frecceTotali, frecceG = 0, raggio, origine[NVAL] = {0, 0}, x[NVAL], puntoFreccia[NVAL];
   double distanza, Pgreco;
 
-
   printf("Quante frecce vuoi lanciare? ");
   scanf("%d", &frecceTotali);
 
- for(i = 0; i < frecceTotali; i++){
+  for(i = 0; i < frecceTotali; i++){
     raggio = random_between(0, 100);
 
     puntoFreccia[0] = random_between(-raggio, raggio);

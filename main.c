@@ -18,11 +18,11 @@ int main(){
     puntoFreccia[0] = random_between(-raggio, raggio);
     puntoFreccia[1] = random_between(-raggio, raggio);
 
-    distanza = sqrt( (x[0] - x[1]) * (x[0] - x[1]) )
+    distanza = sqrt( (x[0] - x[1]) * (x[0] - x[1]) );
 
     if(distanza > raggio) frecceG++;
   }
 
   Pgreco = ((double)frecceG/frecceTotali) * 4;
-  printf("Pgreco : %d\n", Pgreco );
+  printf("Pgreco : %f\n", Pgreco );
 }

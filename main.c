@@ -18,7 +18,7 @@ int main(){
     puntoFreccia[0] = random_between(-raggio, raggio + 1);
     puntoFreccia[1] = random_between(-raggio, raggio + 1);
 
-    distanza = sqrt((double)(puntoFreccia[0] - puntoFreccia[1]) * (puntoFreccia[0] - puntoFreccia[1]) + (0 - 0) * (0 - 0) );
+    distanza = sqrt((double)(puntoFreccia[0]) * (puntoFreccia[0]) + (puntoFreccia[1]) * (puntoFreccia[1]) );
 
     if(distanza < raggio) frecceG++;
   }

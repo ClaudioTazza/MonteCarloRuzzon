@@ -20,7 +20,7 @@ int main(){
 
     distanza = sqrt( (puntoFreccia[0] - puntoFreccia[1]) * (puntoFreccia[0] - puntoFreccia[1]) );
 
-    if(distanza > raggio) frecceG++;
+    if(distanza < raggio) frecceG++;
   }
 
   Pgreco = ((double)frecceG/frecceTotali) * 4;

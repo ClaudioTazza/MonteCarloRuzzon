@@ -1,7 +1,7 @@
 import random
 
 def Pgreco():
-  frecceTotali = input('Quante frecce vuoi lanciare?')
+  frecceTotali = 100000
   frecceG = 0
 
   for i in xrange(frecceTotali): 

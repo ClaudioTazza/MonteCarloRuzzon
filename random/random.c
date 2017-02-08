@@ -7,8 +7,15 @@ void random_init(){
 }
 
 int random_between(int a,int b){
-  int num,max;
+  int num, max;
   max = b-a;
   num = a+(rand()%max);
+  return num;
+}
+
+float random_between_f(int a,int b){
+  float num, max;
+  max = b - a;
+  num = (((float)rand()/(float)(RAND_MAX)) * max) + a;
   return num;
 }

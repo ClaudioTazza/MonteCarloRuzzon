@@ -33,7 +33,7 @@ def Media(Lista):
 def Varianza(Lista, Media):
   varianza = 0
 
-  for i in len(Lista):
+  for i in xrange(len(Lista)):
     varianza = varianza + (Lista[i] - Media)
 
   return varianza

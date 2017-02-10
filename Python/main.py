@@ -2,8 +2,6 @@ from funzione import Pgreco
 from funzione import LPgreco
 from funzione import Media
 
-ListaPgreco = []
-
 ListaPgreco = LPgreco(20)
 
 print 'Lista', ListaPgreco

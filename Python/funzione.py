@@ -20,7 +20,7 @@ def LPgreco(NElem):
 
   for i in range(NElem): 
     VarPgreco = Pgreco(8)
-    ListaPgreco[1:1] = [VarPgreco]
+    ListaPgreco.append(VarPgreco)
 
   return ListaPgreco
 

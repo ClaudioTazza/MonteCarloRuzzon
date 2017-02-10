@@ -35,6 +35,6 @@ def Varianza(Lista, Media):
   varianza = 1
 
   for i in xrange(len(Lista)):
-    varianza += math.sqrt( (Lista[i] - Media)**2 )
+    varianza = math.sqrt(varianza + (Lista[i] - Media)**2 )
 
   return varianza

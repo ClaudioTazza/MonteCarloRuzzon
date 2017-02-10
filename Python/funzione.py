@@ -1,4 +1,5 @@
 import random
+import math
 
 def Pgreco(frecceTotali):
   frecceG = 0
@@ -31,9 +32,9 @@ def Media(Lista):
 
 
 def Varianza(Lista, Media):
-  varianza = 0
+  varianza = 1
 
   for i in xrange(len(Lista)):
-    varianza = varianza + (Lista[i] - Media)
+    varianza += math.sqrt( (Lista[i] - Media)**2 )
 
   return varianza

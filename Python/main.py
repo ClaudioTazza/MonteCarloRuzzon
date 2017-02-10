@@ -1,17 +1,10 @@
-import random
+from funzione import Pgreco
+from funzione import LPgreco
+from funzione import Media
 
-def Pgreco():
-  frecceTotali = 100000
-  frecceG = 0
+ListaPgreco = []
 
-  for i in xrange(frecceTotali): 
-    x = random.uniform(-1, 1)
-    y = random.uniform(-1, 1)
+ListaPgreco = LPgreco(20)
 
-    distanza = x * x + y * y
-
-    if distanza < 1:
-      frecceG = frecceG + 1
-
-  Pgreco = float(frecceG)/frecceTotali * 4 
-  return Pgreco
+print 'Lista', ListaPgreco
+print 'Media', Media(ListaPgreco)
